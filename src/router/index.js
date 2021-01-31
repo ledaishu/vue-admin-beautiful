@@ -7,7 +7,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Layout from '@/layouts'
 import EmptyLayout from '@/layouts/EmptyLayout'
-import { publicPath, routerMode } from '@/config/settings'
+import { publicPath, routerMode } from '@/config'
 
 Vue.use(VueRouter)
 export const constantRoutes = [
@@ -209,13 +209,6 @@ export const asyncRoutes = [
         meta: { title: '放大镜', permissions: ['admin'] },
       },
       {
-        path: 'echarts',
-        name: 'Echarts',
-        component: () => import('@/views/vab/echarts/index'),
-        meta: { title: '图表', permissions: ['admin'] },
-      },
-
-      {
         path: 'loading',
         name: 'Loading',
         component: () => import('@/views/vab/loading/index'),
@@ -254,12 +247,6 @@ export const asyncRoutes = [
         name: 'Lodash',
         component: () => import('@/views/vab/lodash/index'),
         meta: { title: 'lodash', permissions: ['admin'] },
-      },
-      {
-        path: 'imgComparison',
-        name: 'ImgComparison',
-        component: () => import('@/views/vab/imgComparison/index'),
-        meta: { title: '图像拖拽比对', permissions: ['admin'] },
       },
       {
         path: 'smallComponents',

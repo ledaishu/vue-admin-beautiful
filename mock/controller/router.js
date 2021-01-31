@@ -177,13 +177,6 @@ const data = [
         meta: { title: '放大镜', permissions: ['admin'] },
       },
       {
-        path: 'echarts',
-        name: 'Echarts',
-        component: '@/views/vab/echarts/index',
-        meta: { title: '图表', permissions: ['admin'] },
-      },
-
-      {
         path: 'loading',
         name: 'Loading',
         component: '@/views/vab/loading/index',
@@ -218,12 +211,6 @@ const data = [
         name: 'Lodash',
         component: '@/views/vab/lodash/index',
         meta: { title: 'lodash', permissions: ['admin'] },
-      },
-      {
-        path: 'imgComparison',
-        name: 'ImgComparison',
-        component: '@/views/vab/imgComparison/index',
-        meta: { title: '图像拖拽比对', permissions: ['admin'] },
       },
       {
         path: 'smallComponents',

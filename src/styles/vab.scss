@@ -5,13 +5,10 @@
 
 @charset "utf-8";
 
-@import "./normalize.scss";
-@import "./transition.scss";
-@import "./loading.scss";
-@import "./themes/green.scss";
-@import "./themes/glory.scss";
-@import "./themes/dark.scss";
-$base: ".vab";
+@import './normalize.scss';
+@import './transition.scss';
+@import './loading.scss';
+$base: '.vab';
 
 @mixin scrollbar {
   max-height: 88vh;
@@ -70,6 +67,16 @@ a {
   cursor: pointer;
 }
 
+* {
+  transition: $base-transition;
+}
+svg {
+  transition: none;
+  * {
+    transition: none;
+  }
+}
+
 html {
   body {
     position: relative;
@@ -94,6 +101,10 @@ html {
       &:hover {
         opacity: 0.8;
       }
+    }
+
+    .v-modal {
+      backdrop-filter: blur(10px);
     }
 
     /* el-tag开始 */
@@ -143,7 +154,10 @@ html {
       .app-main-container {
         @include base-scrollbar;
 
-        > [class*="-container"] {
+        > [class*='-container'] {
+          * {
+            transition: none;
+          }
           padding: $base-padding;
           background: $base-color-white;
         }

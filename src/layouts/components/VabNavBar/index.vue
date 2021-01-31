@@ -9,21 +9,21 @@
             class="fold-unfold"
             @click="handleCollapse"
           ></i>
-          <breadcrumb class="hidden-xs-only" />
+          <vab-breadcrumb class="hidden-xs-only" />
         </div>
       </el-col>
       <el-col :xs="20" :sm="12" :md="12" :lg="12" :xl="12">
         <div class="right-panel">
-          <error-log></error-log>
-          <full-screen-bar @refresh="refreshRoute"></full-screen-bar>
-          <theme-bar class="hidden-xs-only"></theme-bar>
+          <vab-error-log />
+          <vab-full-screen-bar @refresh="refreshRoute" />
+          <vab-theme-bar class="hidden-xs-only" />
           <vab-icon
             title="重载所有路由"
             :pulse="pulse"
             :icon="['fas', 'redo']"
             @click="refreshRoute"
-          ></vab-icon>
-          <avatar></avatar>
+          />
+          <vab-avatar />
           <!--  <vab-icon
             title="退出系统"
             :icon="['fas', 'sign-out-alt']"
@@ -38,23 +38,8 @@
 <script>
   import { mapActions, mapGetters } from 'vuex'
 
-  import {
-    Avatar,
-    Breadcrumb,
-    ErrorLog,
-    FullScreenBar,
-    ThemeBar,
-  } from '@/layouts/components'
-
   export default {
-    name: 'NavBar',
-    components: {
-      Avatar,
-      Breadcrumb,
-      ErrorLog,
-      FullScreenBar,
-      ThemeBar,
-    },
+    name: 'VabNavBar',
     data() {
       return {
         pulse: false,
@@ -76,7 +61,7 @@
         this.changeCollapse()
       },
       async refreshRoute() {
-        this.$baseEventBus.$emit('reload-routerview')
+        this.$baseEventBus.$emit('reload-router-view')
         this.pulse = true
         setTimeout(() => {
           this.pulse = false

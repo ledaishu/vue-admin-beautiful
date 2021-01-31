@@ -1,11 +1,23 @@
 const data = [
   {
-    title: 'vue-admin-beautiful-pro 1.9版本已发布，点我提前体验',
-    url: 'https://chu1204505056.gitee.io/vue-admin-beautiful-pro/#/index',
+    title: 'Admin Pro 3.0付费版本已发布，增加多项贴心功能，点我提前体验',
+    url:
+      'https://chu1204505056.gitee.io/admin-pro?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci=',
+  },
+  {
+    title: 'Admin Plus 3.0内测版本已发布，增加多项贴心功能，点我提前体验',
+    url:
+      'https://chu1204505056.gitee.io/admin-plus?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci=',
   },
   {
     title: 'vue-admin-beautiful（antdv） vue3.0版本已发布，点我提前体验',
-    url: 'https://chu1204505056.gitee.io/vue-admin-beautiful-antdv/#/index',
+    url:
+      'http://vue-admin-beautiful.com/vue-admin-beautiful-antdv?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci=',
+  },
+  {
+    title: 'vue-admin-beautiful（element-plus） vue3.0版本已发布，点我提前体验',
+    url:
+      'https://chu1204505056.gitee.io/admin-plus?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci=',
   },
 ]
 module.exports = [

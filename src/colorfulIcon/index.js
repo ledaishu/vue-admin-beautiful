@@ -1,7 +1,3 @@
-import Vue from 'vue'
-import { ColorfullIcon } from '@/layouts/components'
-
-Vue.component('VabColorfulIcon', ColorfullIcon)
 const req = require.context('./svg', false, /\.svg$/),
   requireAll = (requireContext) => {
     /*let a = requireContext.keys().map(requireContext);

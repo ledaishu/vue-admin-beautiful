@@ -203,6 +203,31 @@ const data = [
     content: '富文本编辑器支持精细化配置',
     timestamp: '2020-10-20',
   },
+  {
+    content: '公共布局支持自动导出',
+    timestamp: '2020-10-23',
+  },
+  {
+    content: '遮罩添加高斯模糊',
+    timestamp: '2020-10-25',
+  },
+  {
+    content: 'vue3.0 + element-plus版本正式上线',
+    timestamp: '2020-12-5',
+  },
+  {
+    content: '完成首页重构，跟进echarts 5.0',
+    timestamp: '2020-12-7',
+  },
+  {
+    content: '更新sass版本至最新',
+    timestamp: '2021-1-7',
+  },
+  {
+    content:
+      '开源版品牌名升级为vue-admin-beautiful-pro，付费版vue2.x品牌升级为Admin Pro，付费版vue3.x品牌名升级为Admin Plus',
+    timestamp: '最近更新',
+  },
 ]
 
 module.exports = [
